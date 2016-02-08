@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>DataTransporte: Sistema de información para el transporte de la Municipalidad Metropolitana de Lima</title>
+    <meta charset='utf-8' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='' name='description' />
+    <meta content='' name='author' />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>   
+	<link rel="stylesheet" href="css/bootstrap.iframe.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+    
+  <div class="navbar">
+      <div class="navbar-inner">
+        <div class='container'>
+	<a class="brand" href="HackatonLima2013/DataTransporte/index.html">DataTransporte"</a>   
+	<a class="brand" href="sanciones/index_sanciones.html">|Infracciones de tránsito|</a> 
+	<a class="brand" href="empresas/index_empresas.html">|Empresas de transporte|</a>
+	<a class="brand" href="autos/autos_index.html">|Vehículos|</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='span4'>
+        	<p align="justify"> Sistema de información para el procesamiento y visualización (<a href='/HackatonLima2013/DataTransporte/sanciones/index_sanciones.html'>dinámica</a>, <a href='/HackatonLima2013/DataTransporte/empresas/index_empresas.html'>amigable</a> e <a href='/HackatonLima2013/DataTransporte/autos/autos_index.html'>interactiva</a>)  de los <a href='http://www.munlima.gob.pe/datos-abiertos-mml.html'> datos abiertos</a> relacionados al transporte urbano en la ciudad de Lima Metropolitana.</p>
+<!-- Styles -->
+
+<div class='well'><small><p align="center"><b>Hackaton de Datos Abiertos, Lima, 2012</b></p></small>
+<iframe width="300" height="215" src="http://www.youtube.com/embed/pES9ZFZkoEU?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
+<!-- Styles -->          
+<div class='well'><small><p align="center"><b>Programa Umbrales, Liberando información</b></p></small>
+<iframe width="300" height="215" src="http://www.youtube.com/embed/qnVHBjkdhBE?t=4m30s" frameborder="0" allowfullscreen></iframe>
+</div>
+<!-- Styles -->
+</div> 
+<div class='span8'>
+<div class='well'><h4>Gráfico de red: Número de placa, distrito e infracción</h4>
+<small><p align="justify">Desde el enfoque de las <a href="http://en.wikipedia.org/wiki/Social_networks" target="_blank"<a>redes sociales</a> es posible estudiar las relaciones existentes entre todo aquello que nos rodea. En este caso, se visualizan los vínculos entre los números de las placas de los vehículos y los distritos. El vector que los une son las infracciones que se cometieron en los diferentes distritos de Lima Metropolitana<a href='http://www.munlima.gob.pe/datos-abiertos-mml.html/'> Datos de infracciones de tránsito de la Municipalidad Metropolitana de Lima</a> procesados por <a href='http://about.me/manuelvarzen'>@manuelvarzen</a></p></small>
+
+<!-- Styles -->
+<div id='map_canvas'>
+<iframe width="650" height="500" scrolling="no" frameborder="no" src="http://www.google.com/fusiontables/embedviz?containerId=gviz_canvas&amp;viz=GVIZ&amp;t=GRAPH&amp;gc=true&amp;gd=true&amp;sdb=1&amp;rmax=100000&amp;q=select+col0%2C+col20%2C+col4+from+1ZEu0F_NDkW5YmztS9ib5P9IRvbb4_Vhxr1aZf38&amp;qrs=+where+col0+%3E%3D+&amp;qre=+and+col0+%3C%3D+&amp;qe=&amp;state=%7B%22ps%22%3A%221_1_-31_-z_64_-f_2r_7g_2a_2e_5p_-4c_-2k_7x_-2l_1m_79_-j_-5_7v_2v_36_b_-20_-2u_2h_-1d_-2c_y_-5h_-2k_1x_-55_5_9_-4i_1k_76_-u_-2o_1a_-59_-16_6w_-1g_-2y_6r_q_x_59_-s_-x_66_1r_1l_12_-2g_-2u_6j_1v_38_6i_-r_o_67_1y_7_16_-1f_7_15_5_-1t_14_-2q_-34_2a_-5t_n_1h_1_-2n_7l_-1r_37_6s_-2e_-6n_58_-a_-34_3k_-16_-1u_1i_-5l_-30_6d_2v_2u_4w_-5t_-29_7k_-2j_2f_11_-1h_-38_1au_1o_s_9y_-3k_-2y_1id_2e_35_5h_-23_u_3z_7_-e_1ea_14_2e_5g_-4n_e_2n_-20_-36_1e_-w_-25_e_-1k_o_r_-40_16_1cc_4h_2c_1bp_41_2h_uk_-2_-2b_7m_2b_p_2w_-a_-21_7i_1f_5_17_-40_-37_181_17_3a_1vk_-1y_e_7w_q_i_7u_1p_2x_wd_-50_2x_3_-5h_1i_1ip_h_-u_2c_-46_22_5w_-5s_-17_33_g_-j_1bo_45_1m_x_7_-2c_22_-4s_y_19r_-3_5k_3ei_9_r_4i_0_-1c_1i1_1c_-f_55_-17_-y_vq_5_d_5l_-16_t_cj_u_-7_cz_1x_-i_20_-3c_y_4h_-51_-d_b3_20_17_e0_o_-1h_1fx_-h_z_3g_-2f_-38_10g_-1o_18_6m_5c_-2m_7f_1f_2n_w0_-16_31_44_-33_-39_15o_-36_2s_bq_-1c_-b_dq_1k_39_7e_-17_1b_360_2m_39_3g5_3v_-2u_75_-5o_-o_3j6_51_6e_48_-57_-2x_4f_-4_-2w_4l_-5e_i_1t6_-4f_-39_4y_-13_-2x_4z_-j_-2g_6y_1e_-2t_6x_5_-y_6h_57_2q_1d_-3p_1u_6t_-3k_2z_5_-4z_-38_d_h_-16_53_b_1_5j_d_-1s_w2_2p_13_7a_-p_-34_w5_30_20_7d_2m_-e_5m_-2q_t_w_-z_-1f_4j_-57_14_5q_-4s_-30_39g_3l_6_a_-2t_-2p_da_42_x_6p_-25_32_19_-h_-1o_6k_36_1f_4t_-5m_-6_18_-3l_1d_5y_-3l_-39_60_-36_-2x_5o_-5i_-1u_h6_1f_25_39u_v_36_3e1_4u_-2l_3aa_m_3a_3e2_z_-29_3kr_38_-2f_32k_10_2w_hb_1a_1d_es_1b_-1i_3j9_f_-32_ff_31_3b_h8_32_2b_ej_1_15_em_25_39_e9_1c_2z_sn_16_1s_kd_-5g_2r_h4_33_2k_22h_-4c_w_1wb_-g_-18_1ve_-1n_-2n_fa_4z_v_eb_17_y_ln_33_2t_ee_32_32_fh_o_1e_%22%2C%22cx%22%3A0%2C%22cy%22%3A0%2C%22sw%22%3A773.2059769146338%2C%22sh%22%3A538.9902247186927%2C%22z%22%3A0%7D&amp;uiversion=2&amp;gco_forceIFrame=true&amp;gco_hasLabelsColumn=true&amp;width=650&amp;height=500"></iframe>
+</div>
+</p>
+</div>
+</p>
+</div>
+</div>
+</div>
+</body>
+</html>
