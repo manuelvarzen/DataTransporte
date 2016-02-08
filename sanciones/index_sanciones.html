@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>DataTransporte: Sistema de información para el transporte de la Municipalidad Metropolitana de Lima</title>
+    <meta charset='utf-8' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='' name='description' />
+    <meta content='' name='author' />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/bootstrap.spacelab.min.css"/>
+    <link rel="stylesheet" href="styles/bootstrap-responsive.min.css"/>
+    <link rel="stylesheet" href="styles/custom.css"/>
+    <!-- <link href='styles/master.css' media='all' rel='stylesheet' type='text/css' />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class='navbar'>
+      <div class='navbar-inner'>
+        <div class='container'> 
+     
+<a class='brand' href='/DataTransporte/index.html'>DataTransporte</a>   
+
+<a class='brand' href='/DataTransporte/sanciones/index_sanciones.html'>|Infracciones de tránsito|</a> 
+
+<a class='brand' href='../empresas/index_empresas.html'>|Empresas de transporte|
+</a>
+
+<a class='brand' href='/DataTransporte/autos/autos_index.html'>|Vehículos|</a>
+        </div>
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div class='row-fluid'>
+        <div class='span4'>
+         <!-- <p align="justify"> Sistema de información para la visualización (dinámica</a>, <a href='http://manuelvarzen.e-dolph.com/DataTransporte/empresas/index_empresas.html'>amigable</a> e <a href='http://manuelvarzen.e-dolph.com/DataTransporte/autos/autos_index.html'>interactiva</a>) de los <a href='http://www.munlima.gob.pe/datos-abiertos-mml.html'> datos abiertos</a> relacionados al transporte urbano en la ciudad de Lima Metropolitana.</p> -->
+          <div class='well'>
+            <h4>
+              Direcciones 
+            </h4>
+            <input class='input-block-level' id='search_address' placeholder='Ingresa una dirección' type='text' />
+            <label>
+              en el radio de: 
+              <select class='input-small' id='search_radius'>
+                <option value='400'>2 cuadras</option>
+                <option value='805'>805 metros</option>
+                <option value='1610'>1610 metros </option>
+                <option value='3220'>3220 metros</option>
+              </select>
+            </label>
+            <input class='btn btn-primary' id='search' type='button' value='Búsqueda' />
+            <button class='btn' id='reset'>Reiniciar</button>
+          </div>
+          <div class='well'>
+<h4>
+  Tipo de infracciones
+</h4>
+<ul class='inputs-list unstyled'>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType1' />
+      <span class='filter-box filter-yellow'></span>
+      LEVE
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType2' />
+      <span class='filter-box filter-orange'> </span>
+     GRAVE
+    </label>
+  </li>
+  <li>
+    <label class='checkbox inline'>
+      <input type='checkbox' id='cbType3' />
+      <span class='filter-box filter-red'> </span>
+	MUY GRAVE     
+    </label>
+  </li>
+</ul></div>
+<div class = 'well'> 
+<h4>
+Reglamentos de tránsito
+</h4>
+<ul class='inputs-list unstyled'>
+  <li>
+    <label class='radio inline'>
+      <input type='radio' name='types' id='rbType1' checked />
+      Servicio de taxi metropolitano
+    </label>
+  </li>
+  <li>
+    <label class='radio inline'>
+      <input type='radio' name='types' id='rbType2' />
+      Servicio de transporte de carga
+    </label>
+  </li>
+  <li>
+    <label class='radio inline'>
+      <input type='radio' name='types' id='rbType3' />
+      Transporte escolar
+    </label>
+  </li>
+</ul>
+</div>      
+          <p class='alert alert-info lead' id='result_count'></p>
+<div class = 'well'>
+<h5>Población en Lima Metropolitana</h5>
+<ul class='inputs-list unstyled'>
+        <li><div class="color red"></div>De 1.1 a 168.317</li>
+        <li><div class="color yellow"></div>De 168.317 a 335.533</li>
+        <li><div class="color green"></div>De 335.533 a 502.75</li>
+        <li><div class="color blue"></div>De 502.75 a 669.967</li>
+        <li><div class="color purple"></div>De 669.7 a 837.183</li>
+        <li><div class="color blue1"></div>De 837.183 a 1,004.4</li>
+</ul> 
+</div>
+</div>
+        <div class='span8'>
+          <div id='map_canvas'></div>
+          <p class='pull-right'>
+<small align="justify"><b><a href='http://www.munlima.gob.pe/datos-abiertos-mml.html/'>MunLima - Datos de las empresas de transporte </a> procesados por <a href='http://about.me/manuelvarzen'>@manuelvarzen</a> basado en la <a href="http://derekeder.com/searchable_map_template/ ">plantilla </a>de <a href="https://github.com/derekeder">Derek Eder</a></small></p>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="source/jquery.js"></script>
+    <script type="text/javascript" src="source/bootstrap.js"></script>
+    <script type="text/javascript" src="source/jquery.address.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script type="text/javascript" src="source/jquery.geocomplete.min.js"></script>
+    <script type="text/javascript" src="source/maps_lib.js"></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(window).resize(function () {
+          var h = $(window).height(),
+            offsetTop = 90; // Calculate the top offset
+        
+          $('#map_canvas').css('height', (h - offsetTop));
+        }).resize();
+        
+        $(function() {
+          MapsLib.initialize();
+          $("#search_address").geocomplete();
+
+          $(':checkbox').click(function(){
+            MapsLib.doSearch();
+          });
+
+          $(':radio').click(function(){
+            MapsLib.doSearch();
+          });
+          
+          $('#search_radius').change(function(){
+            MapsLib.doSearch();
+          });
+          
+          $('#search').click(function(){
+            MapsLib.doSearch();
+          });
+          
+          $('#find_me').click(function(){
+            MapsLib.findMe(); 
+            return false;
+          });
+          
+          $('#reset').click(function(){
+            $.address.parameter('address','');
+            MapsLib.initialize(); 
+            return false;
+          });
+          
+          $(":text").keydown(function(e){
+              var key =  e.keyCode ? e.keyCode : e.which;
+              if(key == 13) {
+                  $('#search').click();
+                  return false;
+              }
+          });
+        });
+      //]]>
+    </script>
+  </body>
+</html>

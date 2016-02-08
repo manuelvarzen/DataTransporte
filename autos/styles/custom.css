@@ -1,0 +1,32 @@
+a { color: #4B58A6; }
+
+#map_canvas img {
+  max-width: none;
+}
+
+.filter-box { 
+  height: 15px; 
+  width: 15px;  
+  display: inline-block;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box; 
+}
+
+.filter-green { background-color: #00E13C; }
+.filter-yellow { background-color: #FFF300; }
+.filter-orange { background-color: #FF8000; }
+.filter-red { background-color: #FF0000; }
+.filter-blue { background-color: #5781FC; }
+.filter-purple { background-color: #7C54FB; }
+.filter-darkolivegreen { background-color: #556B2F; } /*taxi estación*/ 
+.filter-darkolivegreen1 { background-color: #6E8B3D; } /*taxi independiente*/ 
+.filter-darkolivegreen2 { background-color: #A2CD5A; } /*Taxi remisse*/ 
+.filter-darkolivegreen3 { background-color: #BCEE68; } /*Transporte escolar*/
+.filter-darkolivegreen4 { background-color: #CAFF70; } 
+

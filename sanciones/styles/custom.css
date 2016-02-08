@@ -1,0 +1,68 @@
+a { color: #4B58A6; }
+
+#map_canvas img {
+  max-width: none;
+}
+ #legend {
+        background: #FFF;
+        padding: 10px;
+        margin: 5px;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+      }
+
+      .color {
+        border: 1px solid;
+        height: 12px;
+        width: 12px;
+        margin-right: 3px;
+        float: left;
+      }
+
+      .red {
+        background: #cfe2f3;
+      }
+
+      .yellow {
+        background: #9fc5e8;
+      }
+
+      .green {
+        background: #6fa8dc;
+      }
+
+      .blue {
+        background: #3d85c6;
+      }
+
+      .purple {
+        background: #0b5394;
+      }
+       .blue1 {
+        background: #073763;
+      }
+
+
+
+
+.filter-box { 
+  height: 15px; 
+  width: 15px;  
+  display: inline-block;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box; 
+}
+
+.filter-green { background-color: #00E13C; }
+.filter-yellow { background-color: #FFF300; }
+.filter-orange { background-color: #FF8000; }
+.filter-red { background-color: #FF0000; }
+.filter-blue { background-color: #5781FC; }
+.filter-purple { background-color: #7C54FB; }
+

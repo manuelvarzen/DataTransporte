@@ -1,0 +1,12 @@
+<?php
+
+class ConnectionInfo {
+
+  //Google account that owns the Fusion Table
+  public static $google_username = "manuel.vargas.alegria";
+  public static $google_password = "1(4)2(3)+5*1851";
+  public static $googleApiKey = ""; //get yours here: https://code.google.com/apis/console/
+  public static $fusionTableId = "AIzaSyAuOpuElU4g8Qn5FKzfdXZfVRc2tS5QS-Q"; //must be encrypted!
+  
+}
+?>
