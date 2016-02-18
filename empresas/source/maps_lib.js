@@ -18,12 +18,12 @@ var MapsLib = {
   
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1JoPmftY4DIyaidVO01rAGkSOOuTDd2O4dtuHDLQ", //
+  fusionTableId:      "1JoPmftY4DIyaidVO01rAGkSOOuTDd2O4dtuHDLQ", // Table name Merge_DirEmpTrans_Icons_lib
 //Directorio empresas rev6
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/   
   //*Important* this key is for demonstration purposes. please register your own.   
-  googleApiKey:       "AIzaSyAuOpuElU4g8Qn5FKzfdXZfVRc2tS5QS-Q",        
+  googleApiKey:       "AIzaSyAhHF1z0DW7_tv5aRCsA5F92C1jfFMSB38", // DataTransport on Google Console Developer    
   locationColumn:     "DIRECCION", 
   map_centroid:       new google.maps.LatLng(-12.033154691277574, -77.0154218422249), 
   locationScope:      "lima",      //geographical area appended to all address searches
