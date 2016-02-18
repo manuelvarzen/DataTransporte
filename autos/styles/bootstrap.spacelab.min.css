@@ -185,7 +185,7 @@ input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#bbbb
 .radio,.checkbox{min-height:21px;padding-left:20px;}
 .radio input[type="radio"],.checkbox input[type="checkbox"]{float:left;margin-left:-20px;}
 .controls>.radio:first-child,.controls>.checkbox:first-child{padding-top:5px;}
-.radio.inline,{padding-top:5px;margin-bottom:0;vertical-align:middle;}
+.radio.inline,.checkbox.inline{display:inline-block;padding-top:5px;margin-bottom:0;vertical-align:middle;}
 .radio.inline+.radio.inline,.checkbox.inline+.checkbox.inline{margin-left:10px;}
 .input-mini{width:60px;}
 .input-small{width:90px;}
