@@ -120,7 +120,7 @@ if ( $("#rbType11").is(':checked')) whereClause += " AND " + type_column + "=11"
 //Agregamos una capa////////////////////////////////////////////////////////////////////
 Layer1 = new google.maps.FusionTablesLayer({
 query: {
-from: "1vUvXp-YS34IJb9QK8yQS7q_kSU3QyxvBzm-YbSs", //capa_num_emp_transporte
+from: "1vUvXp-YS34IJb9QK8yQS7q_kSU3QyxvBzm-YbSs", //capa_num_emp_transporte_por_dsitrito_Lima
 select: "GEOMETRY", //agregamos coma al final de mapa y cambiamos el orden select y from
 },
 map: map,
