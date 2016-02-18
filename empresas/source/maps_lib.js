@@ -124,8 +124,8 @@ from: "1vUvXp-YS34IJb9QK8yQS7q_kSU3QyxvBzm-YbSs", //capa_num_emp_transporte
 select: "GEOMETRY", //agregamos coma al final de mapa y cambiamos el orden select y from
 },
 map: map,
-styleId: 3,
-templateId: 5
+styleId: 2,
+templateId: 4
 });
 //////////////////////////////////////////////////////////////////
 MapsLib.searchrecords = new google.maps.FusionTablesLayer({
@@ -135,7 +135,7 @@ MapsLib.searchrecords = new google.maps.FusionTablesLayer({
         where:  whereClause
       },
       styleId: 2,
-      templateId: 3
+      templateId: 4
     });
     MapsLib.searchrecords.setMap(map);
     MapsLib.getCount(whereClause);
