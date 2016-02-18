@@ -125,7 +125,7 @@ select: "GEOMETRY", //agregamos coma al final de mapa y cambiamos el orden selec
 },
 map: map,
 styleId: 2,
-templateId: 4
+templateId: 2
 });
 //////////////////////////////////////////////////////////////////
 MapsLib.searchrecords = new google.maps.FusionTablesLayer({
