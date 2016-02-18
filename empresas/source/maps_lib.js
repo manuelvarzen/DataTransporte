@@ -135,7 +135,7 @@ MapsLib.searchrecords = new google.maps.FusionTablesLayer({
         where:  whereClause
       },
       styleId: 2,
-      templateId: 2
+      templateId: 4
     });
     MapsLib.searchrecords.setMap(map);
     MapsLib.getCount(whereClause);
