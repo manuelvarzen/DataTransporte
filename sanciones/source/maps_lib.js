@@ -136,8 +136,8 @@ select: "GEOMETRY",
 from: "1lnECV1dbhKyHp7flSIVZB7kLqXbSqDv4E6UX-_U" //capa_pob_LimaMetrop
 },
 map: map,
-styleId: 2,
-templateId: 2
+styleId: 3,
+templateId: 5
 });
 //////////////////////////////////////////////////////////////////
     MapsLib.searchrecords = new google.maps.FusionTablesLayer({
@@ -146,8 +146,8 @@ templateId: 2
         select: MapsLib.locationColumn,
         where:  whereClause
       },
-      styleId: 2,
-      templateId: 2
+      styleId: 3,
+      templateId: 5
     });
     MapsLib.searchrecords.setMap(map);
     MapsLib.getCount(whereClause);
