@@ -17,12 +17,12 @@ var MapsLib = {
   
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1JoPmftY4DIyaidVO01rAGkSOOuTDd2O4dtuHDLQ", // TableName Merge_DirEmpTrans_Icons_lib
+  //fusionTableId: "1JoPmftY4DIyaidVO01rAGkSOOuTDd2O4dtuHDLQ", // TableName Merge_DirEmpTrans_Icons_lib
+  fusionTableId: "1NoGhOoq5W0T2E4Pa-LUAHkktC2mQR0ecfTMIG2w", // TableName Directorio_de_Empresas_de_Transporte_Lima_Callao_rev6
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/   
   //*Important* this key is for demonstration purposes. please register your own.   
-
-  googleApiKey:       "AIzaSyB4t3WvfY8b-yh5qoXmniphtDmFe33uqi8", // On Google Developer Console TransportData1 
+  googleApiKey: "AIzaSyB4t3WvfY8b-yh5qoXmniphtDmFe33uqi8", // On Google Developer Console TransportData1 
 
   //name of the location column in your Fusion Table. 
   //NOTE: if your location column name has spaces in it, surround it with single quotes 
