@@ -141,7 +141,7 @@ templateId: 4
         where:  whereClause
       },
       styleId: 2,
-      templateId: 3
+      templateId: 4
     });
     MapsLib.searchrecords.setMap(map);
     MapsLib.getCount(whereClause);
