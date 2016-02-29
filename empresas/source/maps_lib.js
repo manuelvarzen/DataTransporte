@@ -22,7 +22,7 @@ var MapsLib = {
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/   
   //*Important* this key is for demonstration purposes. please register your own.   
-  googleApiKey:       "AIzaSyAhHF1z0DW7_tv5aRCsA5F92C1jfFMSB38", // TransportData on Google Console Developer    
+  googleApiKey:       "AIzaSyB4t3WvfY8b-yh5qoXmniphtDmFe33uqi8", // TransportData1 
   
   locationColumn:     "DIRECCION", 
   map_centroid:       new google.maps.LatLng(-12.033154691277574, -77.0154218422249), 
