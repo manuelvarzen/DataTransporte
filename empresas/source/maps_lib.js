@@ -19,12 +19,12 @@ var MapsLib = {
   
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1ZEu0F_NDkW5YmztS9ib5P9IRvbb4_Vhxr1aZf38", //Directorio_sanciones_rev8 
+  fusionTableId:      "1NoGhOoq5W0T2E4Pa-LUAHkktC2mQR0ecfTMIG2w", // Table name Directorio_de_Empresas_de_Transporte_Lima_Callao_rev6 
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/   
   //*Important* this key is for demonstration purposes. please register your own.   
 
-  googleApiKey:       "AIzaSyAhHF1z0DW7_tv5aRCsA5F92C1jfFMSB38", //On Google Developer Console TransporData 
+  googleApiKey:       "AIzaSyB4t3WvfY8b-yh5qoXmniphtDmFe33uqi8", // On Google Developer Console TransportData1 
 
   //name of the location column in your Fusion Table. 
   //NOTE: if your location column name has spaces in it, surround it with single quotes 
@@ -74,18 +74,12 @@ var MapsLib = {
     var whereClause = MapsLib.locationColumn + " not equal to ''";
     
 //-----custom filters-------
-var type_column = "TYPE_NOMBRE_INFRACCION";
-var searchType = type_column + " IN (-1,";
-if ( $("#cbType1").is(':checked')) searchType += "1,";
-if ( $("#cbType2").is(':checked')) searchType += "2,";
-if ( $("#cbType3").is(':checked')) searchType += "3,";
-whereClause += " AND " + searchType.slice(0, searchType.length - 1) + ")";
+var type_column = "TYPE_MODALIDAD";
+if ( $("#rbType2").is(':checked')) whereClause += " AND " + type_column + "=2";
+if ( $("#rbType7").is(':checked')) whereClause += " AND " + type_column + "=7";
+if ( $("#rbType9").is(':checked')) whereClause += " AND " + type_column + "=9";
+if ( $("#rbType11").is(':checked')) whereClause += " AND " + type_column + "=11";
 //-------end of custom filters--------
-var type_column = "TYPE_CLASE_INFRACCION";
-if ( $("#rbType1").is(':checked')) whereClause += " AND " + type_column + "=5";
-if ( $("#rbType2").is(':checked')) whereClause += " AND " + type_column + "=6";
-if ( $("#rbType3").is(':checked')) whereClause += " AND " + type_column + "=7";
-    //-------end of custom filters--------
     
     if (address != "") {
       if (address.toLowerCase().indexOf(MapsLib.locationScope) == -1)
@@ -133,11 +127,11 @@ if ( $("#rbType3").is(':checked')) whereClause += " AND " + type_column + "=7";
 Layer1 = new google.maps.FusionTablesLayer({
 query: {
 select: "GEOMETRY",
-from: "1lnECV1dbhKyHp7flSIVZB7kLqXbSqDv4E6UX-_U" //capa_pob_LimaMetrop
+from: "1vUvXp-YS34IJb9QK8yQS7q_kSU3QyxvBzm-YbSs", //capa_num_emp_transporte_por_dsitrito_Lima
 },
 map: map,
-styleId: 3,
-templateId: 5
+styleId: 2,
+templateId: 4
 });
 //////////////////////////////////////////////////////////////////
     MapsLib.searchrecords = new google.maps.FusionTablesLayer({
@@ -146,8 +140,8 @@ templateId: 5
         select: MapsLib.locationColumn,
         where:  whereClause
       },
-      styleId: 3,
-      templateId: 5
+      styleId: 2,
+      templateId: 2
     });
     MapsLib.searchrecords.setMap(map);
     MapsLib.getCount(whereClause);
