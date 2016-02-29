@@ -138,8 +138,8 @@ templateId: 4
         select: MapsLib.locationColumn,
         where:  whereClause
       },
-      styleId: 2,
-      templateId: 2
+      styleId: 3,
+      templateId: 4
     });
     MapsLib.searchrecords.setMap(map);
     MapsLib.getCount(whereClause);
