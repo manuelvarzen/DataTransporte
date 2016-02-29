@@ -18,7 +18,7 @@ var MapsLib = {
   
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
-  fusionTableId:      "1NoGhOoq5W0T2E4Pa-LUAHkktC2mQR0ecfTMIG2w", // Table name 
+  fusionTableId:      "1JoPmftY4DIyaidVO01rAGkSOOuTDd2O4dtuHDLQ", // Table name Merge_DirEmpTrans_Icons_lib
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/   
   //*Important* this key is for demonstration purposes. please register your own.   
@@ -126,7 +126,7 @@ select: "GEOMETRY", //agregamos coma al final de mapa y cambiamos el orden selec
 },
 map: map,
 styleId: 2,
-templateId: 2
+templateId: 4
 });
 //////////////////////////////////////////////////////////////////
 MapsLib.searchrecords = new google.maps.FusionTablesLayer({
@@ -136,7 +136,7 @@ MapsLib.searchrecords = new google.maps.FusionTablesLayer({
         where:  whereClause
       },
       styleId: 2,
-      templateId: 4
+      templateId: 2
     });
     MapsLib.searchrecords.setMap(map);
     MapsLib.getCount(whereClause);
