@@ -245,7 +245,7 @@ displayCount: function(whereClause) {
     $( "#result_count" ).fadeIn();
   },
 
- getList: function(whereClause) {
+ /* getList: function(whereClause) {
   var selectColumns = "NOMBRE_EMPRESA, DIRECCION, DISTRITO, TELEFONO ";
   MapsLib.query(selectColumns, whereClause, "MapsLib.displayList");
 },
@@ -280,7 +280,7 @@ displayList: function(json) {
     }
   }
   results.fadeIn();
-}, 
+}, */ 
   addCommas: function(nStr) {
     nStr += '';
     x = nStr.split('.');
@@ -292,7 +292,6 @@ displayList: function(json) {
     }
     return x1 + x2;
   },
-  
   //converts a slug or query string in to readable text
   convertToPlainString: function(text) {
     if (text == undefined) return '';
