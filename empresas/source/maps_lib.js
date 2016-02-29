@@ -10,10 +10,8 @@
  * 
  *script del archivo index_sanciones.html
  */
- 
 var MapsLib = MapsLib || {};
 var MapsLib = {
-  
   //Setup section - put your Fusion Table details here
   //Using the v1 Fusion Tables API. See https://developers.google.com/fusiontables/docs/v1/migration_guide for more info
   
@@ -126,8 +124,8 @@ if ( $("#rbType11").is(':checked')) whereClause += " AND " + type_column + "=11"
 /////////////////////////////////////////////////////////////////
 Layer1 = new google.maps.FusionTablesLayer({
 query: {
-select: "GEOMETRY",
 from: "1vUvXp-YS34IJb9QK8yQS7q_kSU3QyxvBzm-YbSs", //capa_num_emp_transporte_por_dsitrito_Lima
+select: "GEOMETRY",
 },
 map: map,
 styleId: 2,
