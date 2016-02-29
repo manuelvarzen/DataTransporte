@@ -54,61 +54,40 @@
           </div>
 <!--Fin del inicio de la sección de búsqueda --> 
 <!--Inicio de los filtros
+<!-- Opciones de búsqueda -->          
 <div class='well'>
-<h4>
-Tipo de infracciones
-</h4>
-<ul class='inputs-list unstyled'>
-  <li>
-      <label class='checkbox inline'>
-      <input type='checkbox' id='cbType1' />
-      <span class='filter-box filter-yellow'></span>
-      LEVE
-    </label>
-  </li>
-  
-  <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType2' />
-      <span class='filter-box filter-orange'> </span>
-     GRAVE
-    </label>
-  </li>
-  
-  <li>
-    <label class='checkbox inline'>
-      <input type='checkbox' id='cbType3' />
-      <span class='filter-box filter-red'> </span>
-	MUY GRAVE     
-    </label>
-  </li>
-</ul>
-</div>
+  <p>
+  <strong>Muestrame las empresas de transporte: </strong>
+  <br>
+  <label class='radio'>
+  <input type='radio' name="types" id='rbType2' checked>
+  <span class='filter-box filter-blue'></span>
+  Taxi estación
+  </span>
+  </label>
 
-<div class = 'well'> 
-<h4>
-Reglamentos de tránsito
-</h4>
-<ul class='inputs-list unstyled'>
-<li>
-<label class='radio inline'>
-<input type='radio' name='types' id='rbType1' checked />
-Servicio de taxi metropolitano
-</label>
-  </li>
-  <li>
-    <label class='radio inline'>
-      <input type='radio' name='types' id='rbType2' />
-      Servicio de transporte de carga
-    </label>
-  </li>
-  <li>
-    <label class='radio inline'>
-      <input type='radio' name='types' id='rbType3' />
-      Transporte escolar
-    </label>
-  </li>
-</ul>
+  <label class='radio'>
+  <input type='radio' name="types" id='rbType7'>
+  <span class='filter-box filter-celeste'></span>
+  Transporte escolar
+  </span>
+  </label>
+
+  <label class='radio'>
+  <input type='radio' name="types" id='rbType9'>
+  <span class='filter-box filter-orange'></span>
+  Transporte de carga 
+  </span>
+  </label>
+
+  <label class='radio'>
+  <input type='radio' name="types" id='rbType11'>
+  <span class='filter-box filter-white'></span>
+  Transporte urbano
+  </span>
+  </label>
+
+</p>
 </div>
 <!--Fin de los filtros --> 
 <!--Inicio de los resultados --> 
