@@ -18,10 +18,12 @@ a { color: #4B58A6; }
           background-clip: padding-box; 
 }
 
+.filter-yellow { background-color: #FBF358; }
 .filter-green { background-color: #00E13C; }
-.filter-yellow { background-color: #FFF300; }
-.filter-orange { background-color: #FF8000; }
-.filter-red { background-color: #FF0000; }
 .filter-blue { background-color: #5781FC; }
 .filter-purple { background-color: #7C54FB; }
+.filter-red { background-color: #FB6353; }
+.filter-orange { background-color:#FE9A2E; } 
+.filter-celeste { background-color:#00D3EA; }
+.filter-white { background-color:#FFFFFF; }
 
