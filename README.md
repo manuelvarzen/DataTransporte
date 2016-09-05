@@ -1,1 +1,2 @@
-Basado en el trabajo realizado por Derek Eder y algunas otras forma de visualizar datos presentamos información con relación al transporte público de Lima Metropolitana en el 2012.
+#DataTransporte (2011) 
+Haciendo uso de la plantilla de Derek Eder configure un conjunto de visualizaciones con relación a los datos abiertos del transporte público de Lima Metropolitana. 
