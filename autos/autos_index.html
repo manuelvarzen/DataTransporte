@@ -136,9 +136,13 @@
           ['VOLKSWAGEN', new Date (2012,0,1), 0, 'Lima'],
 
         ]);
+	
+	var options = {
+		title: 'Cantidad de registros'
+	    };
 	    
         var chart = new google.visualization.BubbleChart(document.getElementById('map_canvas'));
-        chart.draw(data, {width: 700, height:600}, {title:'cantidad de registros de automoviles'});
+        chart.draw(data, {width: 700, height:600});
       }
     </script>
 </div>
