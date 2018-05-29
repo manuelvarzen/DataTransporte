@@ -50,17 +50,14 @@
 
 <div class='well'>
 <h4>Evolución del registro de vehículos en Lima Metropolitana</h4>
-<small><p align="justify">La animacion representa la evolución del registro de automoviles, desde el año 1997 hasta el 2012. </p></small>
+<small><p align="justify">Evolución de la cantidad de registros de automoviles, entre 1997 y 2012.</p></small>
 
 <div id='map_canvas'> </div>
 <small align="justify"><b><a href='https://web.archive.org/web/20110930160242/http://www.munlima.gob.pe/datos-abiertos-mml.html'>Datos del registro de vehiculos de la Municipalidad Metrpolitana de Lima</a> procesados por <a href='https://about.me/manuelvarzen'>@manuelvarzen</a></small>
-
-  
-  
 </div>
 </div>
 </div>
-        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawSeriesChart);
@@ -139,6 +136,11 @@
           ['VOLKSWAGEN', new Date (2012,0,1), 0, 'Lima'],
 
         ]);
+	
+	var options = {
+	title: 'cantidad de registros de automoviles'
+	};
+	    
         var chart = new google.visualization.BubbleChart(document.getElementById('map_canvas'));
         chart.draw(data, {width: 700, height:600});
       }
