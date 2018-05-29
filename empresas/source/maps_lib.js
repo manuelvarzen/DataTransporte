@@ -35,7 +35,7 @@ var MapsLib = {
   
   searchRadius:       500,            //in meters ~ 500 
   defaultZoom:        11,             //zoom level when map is loaded (bigger is more zoomed in)
-  addrMarkerImage: 'http://maps.gstatic.com/mapfiles/arrow.png',
+  addrMarkerImage: 'https://maps.gstatic.com/mapfiles/arrow.png',
   currentPinpoint: null,
   
   initialize: function() {
