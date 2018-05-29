@@ -137,10 +137,16 @@
 
         ]);
 	
-	var options = {
-		title: 'Cantidad de registros',
-	    };
-	    
+	  var options = {
+        title: 'Cantidad de registros',
+        hAxis: {title: 'Años'},
+        vAxis: {title: 'Cantidad'},
+        bubble: {
+          textStyle: {
+            auraColor: 'none',
+          }
+        }
+      };
         var chart = new google.visualization.BubbleChart(document.getElementById('map_canvas'));
         chart.draw(data, options);
       }
