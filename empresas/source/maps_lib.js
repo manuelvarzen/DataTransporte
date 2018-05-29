@@ -18,7 +18,6 @@ var MapsLib = {
   //the encrypted Table ID of your Fusion Table (found under File => About)
   //NOTE: numeric IDs will be depricated soon
   fusionTableId: "1ytSB2W6ABKz0U0NEuxCRirEqEVAFGkcSDsOtdSOr", // TableName Directorio_empresas_tranporte_7
- 
   
   //*New Fusion Tables Requirement* API key. found at https://code.google.com/apis/console/   
   //*Important* this key is for demonstration purposes. please register your own.   
